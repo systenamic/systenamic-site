@@ -390,6 +390,105 @@ img, svg { display: block; max-width: 100%; }
   color: var(--accent);
 }
 
+/* ─── Contact ─────────────────────────────────────────── */
+
+.contact {
+  padding: var(--sp-10) var(--sp-6);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-5);
+}
+
+.contact-headline {
+  font-family: var(--font-display);
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  color: var(--fg);
+  margin-bottom: var(--sp-8);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--fg-tertiary);
+}
+
+.form-input {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--r-xs);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  padding: var(--sp-3) var(--sp-4);
+  transition: border-color var(--dur-fast) var(--ease-out-quint);
+  width: 100%;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--fg-disabled);
+}
+
+.form-input:focus {
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-submit {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--r-xs);
+  color: var(--accent);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wider);
+  padding: var(--sp-3) var(--sp-5);
+  text-transform: uppercase;
+  transition: background var(--dur-fast) var(--ease-out-quint),
+              color var(--dur-fast) var(--ease-out-quint),
+              transform var(--dur-fast) var(--ease-out-quint);
+}
+
+.form-submit:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.form-submit:active {
+  transform: scale(0.98);
+}
+
 /* ─── Footer ──────────────────────────────────────────── */
 
 .footer {

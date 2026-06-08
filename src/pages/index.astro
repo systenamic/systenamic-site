@@ -87,10 +87,38 @@ import '../styles/global.css';
       </div>
     </section>
 
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <p class="contact-label">[ 03 ] GET IN TOUCH</p>
+      <h2 class="contact-headline">LET'S TALK</h2>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xgobkpor"
+        method="POST"
+      >
+        <!-- Honeypot: bots fill this, humans don't see it -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <label class="form-label" for="name">[ NAME ]</label>
+          <input class="form-input" type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="email">[ EMAIL ]</label>
+          <input class="form-input" type="email" id="email" name="email" required placeholder="your@email.com" />
+        </div>
+        <div class="form-row">
+          <label class="form-label" for="message">[ MESSAGE ]</label>
+          <textarea class="form-input form-textarea" id="message" name="message" required placeholder="What are you working on?" rows="5"></textarea>
+        </div>
+        <button class="form-submit" type="submit">[ SEND MESSAGE ]</button>
+      </form>
+    </section>
+
     <hr class="section-divider" />
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="footer">
       <span class="footer-wordmark">SYSTENAMIC</span>
       <ul class="footer-links">
         <li><a href="mailto:hello@systenamic.com">[ HELLO@SYSTENAMIC.COM ]</a></li>
