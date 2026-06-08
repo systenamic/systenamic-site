@@ -1,17 +1,123 @@
 ---
-
+import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Systenamic helps small and medium businesses get real, lasting value from Claude Cowork. Installation, training, and ongoing support — no developer required." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Systenamic — Claude Cowork for SMEs</title>
+  </head>
+  <body>
+
+    <!-- Nav -->
+    <nav class="nav" id="nav">
+      <a href="/" class="nav-wordmark">SYSTENAMIC</a>
+      <ul class="nav-links">
+        <li><a href="#what">[ WHAT WE DO ]</a></li>
+        <li><a href="#services">[ SERVICES ]</a></li>
+        <li><a href="#contact">[ GET IN TOUCH ]</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-glyph" aria-hidden="true">✻</div>
+      <div>
+        <p class="hero-eyebrow">AI SYSTEMS · BRISTOL, UK · CLAUDE COWORK</p>
+        <h1 class="hero-headline">
+          AI THAT ACTUALLY <em>WORKS</em>
+        </h1>
+        <p class="hero-sub">
+          Systenamic installs and configures Claude Cowork for small and medium businesses. No developers, no API keys. Just a system that sticks.
+        </p>
+        <a href="#contact" class="hero-cta">[ GET IN TOUCH ]</a>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- What we do -->
+    <section class="what" id="what">
+      <div>
+        <p class="what-label">[ 01 ] WHAT WE DO</p>
+        <h2 class="what-headline">COWORK, DONE PROPERLY</h2>
+      </div>
+      <div class="what-body">
+        <p>
+          Most businesses that try AI tools get stuck at the same point: they can see the potential, but they cannot get it to work reliably in the way their team actually operates. The tool is there. The friction is in the setup.
+        </p>
+        <p>
+          Systenamic solves that. We configure Claude Cowork specifically for your context, train the people who will use it every day, and stay involved as you embed it into your workflows. The result is a system that runs quietly and keeps running.
+        </p>
+        <p>
+          Our constraint is deliberate: everything we build stays within Cowork's native capabilities. No code, no custom integrations, no dependency on a developer to maintain it.
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <p class="services-label">[ 02 ] SERVICES</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <p class="service-num">01</p>
+          <h3 class="service-title">INSTALLATION</h3>
+          <p class="service-desc">
+            We set up Claude Cowork from scratch: configuring your workspace, importing your brand and process context, and building the initial system that fits how your business operates.
+          </p>
+        </div>
+        <div class="service-card">
+          <p class="service-num">02</p>
+          <h3 class="service-title">TRAINING</h3>
+          <p class="service-desc">
+            Hands-on sessions for you and your team. We focus on practical, day-to-day use rather than abstract demonstrations, so people leave knowing exactly how to use the system for their work.
+          </p>
+        </div>
+        <div class="service-card">
+          <p class="service-num">03</p>
+          <h3 class="service-title">ONGOING SUPPORT</h3>
+          <p class="service-desc">
+            As your business changes, your system should too. We provide ongoing support to evolve your Cowork setup, troubleshoot what is not working, and extend what is.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="manifesto">
+      <div class="manifesto-watermark" aria-hidden="true">SYSTENAMIC</div>
+      <p class="manifesto-text">
+        REAL VALUE. <em>NO</em> DEVELOPER REQUIRED.
+      </p>
+    </section>
+
+    <hr class="section-divider" />
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <span class="footer-wordmark">SYSTENAMIC</span>
+      <ul class="footer-links">
+        <li><a href="mailto:hello@systenamic.com">[ HELLO@SYSTENAMIC.COM ]</a></li>
+        <li><a href="https://substack.com/@systenamic" target="_blank" rel="noopener">[ SUBSTACK ]</a></li>
+        <li><a href="https://linkedin.com/in/systenamic" target="_blank" rel="noopener">[ LINKEDIN ]</a></li>
+      </ul>
+      <p class="footer-meta">© 2026 SYSTENAMIC · BRISTOL, UK</p>
+    </footer>
+
+    <script>
+      const nav = document.getElementById('nav');
+      const onScroll = () => {
+        nav?.classList.toggle('scrolled', window.scrollY > 10);
+      };
+      window.addEventListener('scroll', onScroll, { passive: true });
+    </script>
+
+  </body>
 </html>
